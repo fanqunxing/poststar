@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="lib/bootstarp.css">
+<link rel="stylesheet" type="text/css" href="lib/jquery.json-viewer.css">
+<link rel="stylesheet" type="text/css" href="popup.css">
+<script type="text/javascript" src="lib/jquery-1.12.2.js"></script>
+<script type="text/javascript" src="lib/jquery.json-viewer.js"></script>
+<script type="text/javascript" src="background.js"></script>
+<script src="popup.js"></script>
+   <table class="table table-hover">
+        <thead>
+            <tr>
+                <th colspan="2" class="text-center bg-primary">post工具</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>请求地址</td>
+                <td>
+                    <input id="url" type="" name="" style="width: 100%">
+                </td>
+            </tr>
+            <tr>
+                <td>请求方式</td>
+                <td>
+                    <select id="type" style="width: 100%">
+                        <option value="get">---get---</option>
+                        <option value="post">---post---</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>contentType</td>
+                <td>
+                    <select id="contentType" style="width: 100%">
+                        <option value="application/x-www-form-urlencoded; charset=UTF-8">
+                            application/x-www-form-urlencoded; charset=UTF-8
+                        </option>
+                        <option value="multipart/form-data">
+                            multipart/form-data
+                        </option>
+                        <option value="application/json;charset=utf-8">
+                            application/json;charset=utf-8
+                        </option>
+                        <option value="text/xml">
+                            text/xml
+                        </option>
+                    </select>
+                </td>
+            </tr>
+             <tr>
+                <td>token</td>
+                <td>
+                    <input id="token" type="" name="" style="width: 100%">
+                </td>
+            </tr>
+            <tr>
+                <td>参数</td>
+                <td>
+                    <textarea id="params" rows="10" cols="30" style="width: 100%"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="text-left" colspan="2">
+                    <div class="btn btn-primary" id="copBtn">复制</div>
+                    <div class="btn btn-primary" id="sbmBtn">提交</div>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>结果</td>
+                <td>
+                    <pre id="result" style="max-width: 800px;min-height: 40px;"></pre>
+                    <textarea id="resultHide" type="" name=""></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2" class="text-right">fwx426328</th>
+            </tr>
+        </tfoot>
+    </table>
+</head>
+<body>
+</body>
+</html>

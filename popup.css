@@ -1,0 +1,10 @@
+body,html{
+    min-width:800px;
+}
+body{
+    padding: 0 20px;
+}
+#resultHide{
+    width: 1px;
+    height: 1px;
+}
